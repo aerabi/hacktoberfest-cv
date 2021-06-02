@@ -1,0 +1,174 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+\usepackage{tipa}
+\usepackage{upquote}
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Mohammad-Ali ~A\textquotesingle{}R\^ABI\footnote{Officially (and ambiguously):\ Mohammad Ali ~ARABI.  Lastname:\ A'R\^ABI \textipa{[æPr6:bi]} means nomad.}}{29. 04. 1991 \ \ \ \ Tehran}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:aerabi.at.gmx.dot.de}{mohammad-ali\mbox{}@\mbox{}aerabi.com}\sbull
+\textsmaller{+}49 176 3569 1988\sbull
+% \textsmaller{+}31 6 301 59 402\sbull
+\href{http://aerabi.github.io}{aerabi.github.io}\sbull 
+% \href{http://www.linkedin.com/in/aerabi}{www.linkedin.com/in/aerabi} \sbull
+\href{https://orcid.org/0000-0001-7088-417X}{\textsc{orc}i\textsc{d} 0000-0001-7088-417X} \\
+% {\newnums angellandros} \emph{(Skype)}\sbull
+Schildackerweg 8 \sbull
+79115\thinspace\ {\sc Freiburg im Breisgau}\sbull
+Baden-W\"urttemberg\sbull
+{\sc Germany}
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Professional Experience}
+
+\headedsection
+  {\href{https://www.apptec360.com/}{AppTec Services GmbH}}
+  {\textsc{Freiburg, Germany}} {%
+  \headedsubsection
+    {Senior Full-Stack Developer\footnote{All the positions are 100\% = full-time = 40 hrs/week if not otherwise specified.}}
+    {Aug \apo19 -- Present}
+    {\bodytext{Creating new backend with Node.js, TypeScript, and MongoDB. Coaching other developers. Setting up CI, Docker setup of the projects, package registries, etc. Doing interviews. \#RxJS \#GitLab}}
+}
+
+\headedsection
+  {\href{https://picnic.app/}{Picnic International BV}}
+  {\textsc{Amsterdam, Netherlands}} {%
+  \headedsubsection
+    {Backend Java Developer}
+    {Jun \apo18 -- Jul \apo19}
+    {\bodytext{Implementing new features for the cross-product platform in Java 11. Fixing bugs and refactoring. Reviewing candidates' assignments. \#MongoDB \#RabbitMQ \#Docker \#RxJava}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://www.uni-freiburg.de/}{Albert-Ludwigs-Universität Freiburg}}
+  {\textsc{Freiburg im Breisgau, Germany}} {%
+  \headedsubsection
+    {Research Assistant / HiWi (50\%), \href{http://proglang.informatik.uni-freiburg.de}{Programming Languages Lab}}
+    {Feb \apo17 -- Jul \apo18}
+    {\bodytext{In charge of implementing a \href{https://mitpress.mit.edu/sites/default/files/titles/content/9780262162289_sch_0001.pdf}{linear lambda calculus} in Coq: \url{https://github.com/aerabi/llc}}}
+}
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {\href{https://en.wikipedia.org/wiki/Cafe_Bazaar}{Cafe Bazaar} (Officially:\ Âvây e Hamrâh e Hušmand e Hezârdastân)}
+  {\textsc{Tehran, Iran}} {%
+  \headedsubsection
+    {Software Developer}
+    {Ago \apo15 -- Sep \apo16}
+    {\bodytext{Developing features on Divar (10th most used website in Iran) and CafeBazaar (Android app store). Creating CI pipelines. Developing tools for HR. \#Django \#PostgreSQL \#Docker \#GitLab-CI}}
+}
+
+\headedsection
+  {\href{http://mitrc.ir}{Mobin Information Technology Research Center}}
+  {\textsc{Tehran, Iran}} {%
+
+  \headedsubsection
+    {Java Developer}
+    {Sep \apo13 -- Sep \apo15}
+    {\bodytext{Creating a distributed platform based on Apache Storm and Hadoop in collaboration with the experts.}}
+}
+
+\vspace{-0.2em}
+\begin{center}
+  \emph{\small Please refer to my \href{http://www.linkedin.com/in/angellandros}{Linked-in profile} for a more complete list of work experiences along with recommendations.}
+\end{center}
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{http://www.uni-freiburg.de/}{Albert-Ludwigs-Universität Freiburg}}
+  {\textsc{Freiburg im Breisgau, Germany}} {%
+  \headedsubsection
+    {MSc in Computer Science (Informatik)}
+    {2016 -- 2021}
+    {\bodytext{Focused on Cyber-Physical Systems (as the specialization), Machine Learning (master project), and Programming Languages (master thesis).}}
+}
+
+\headedsection
+  {\href{http://www.en.sharif.edu/}{Sharif University of Technology}}
+  {\textsc{Tehran, Iran}} {%
+  \headedsubsection
+    {MSc in Pure Mathematics / Logic \textnormal{\textit{~(discontinued)}}}
+    {2013 -- 2015} 
+    {\bodytext{Focused on Intuitionistic Logic and Proof Theory.
+    Supervisor: Mohammad Ardeshir.\\
+    Thesis: Categorial Grammar with Applications in Machine Translation.}}
+}
+
+\headedsection
+  {\href{http://en.sbu.ac.ir/}{Shahid Beheshti University}}
+  {\textsc{Tehran, Iran}} {%
+  \headedsubsection
+    {BSc in Pure Mathematics}
+    {2009 -- 2013} 
+    {\bodytext{Thesis: Distance Transform with Applications (in the fields of Digital Geometry).\\
+    Two medals (bronze and silver) in National Collegiate Mathematics Competition (2011 and 2013), 5th team rank, and admission to International Mathematics Competition for University Students 2013.}}
+}
+
+\headedsection
+  {\href{https://en.wikipedia.org/wiki/National_Organization_for_Development_of_Exceptional_Talents}{National Organization for Development of Exceptional Talents}}
+  {\textsc{Karaj, Iran}} {%
+  \headedsubsection
+    {High-School Diploma \& Pre-University Degree in Mathematics and Physics}
+    {2002 -- 2009} {}
+}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Programming languages:}
+  {C \emph{(mother tongue)}, C++, Java, Python, Scala, JavaScript, TypeScript.}
+
+\vspace{0.5em}
+\inlineheadsection
+  {Natural languages:}
+  {Persian \emph{(mother tongue)}, English \emph{(full professional proficiency)}, German \emph{(working proficiency)}, Dutch \emph{(elementary proficiency)}. Lived in \textsc{Germany}, and \textsc{Netherlands},  \textsc{Switzerland}, and  \textsc{Iran}. Can read: Cyrillic, Hebrew, Greek, Phoenician, Old Persian Cuneiform, Avestan, and Pahlavi alphabets.}
+
+\vspace{0.5em}
+\inlineheadsection
+  {Other skills:}
+  {Create the most boring CV.~~Squash commits. Force push to master. Explain family relations between Mortal Kombat characters. Swear in Huttese. Watch Watchmen Ultimate Cut in one sitting.}
+
+\end{document}
+
+＀
