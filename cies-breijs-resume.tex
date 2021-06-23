@@ -26,6 +26,11 @@
 \usepackage{tipa}
 \usepackage{upquote}
 
+\usepackage{chronosys}
+
+\usepackage{amssymb}
+
+\newcommand{\colorsquare}[1]{\textcolor{#1}{$\blacksquare$}}
 
 \begin{document}  % begin the content of the document
 \sloppy  % this to relax whitespacing in favour of straight margins
@@ -55,10 +60,29 @@ Baden-W\"urttemberg\sbull
 
 \spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
 
+\roottitle{Timeline}
+
+
+\startchronology[startyear=2009,startdate=false,stopdate=false]
+\chronoperiode{2013}{2015}{MITRC}
+\chronoperiode[color=brown]{2015}{2016}{CafeBazaar}
+\chronoperiode{2017}{2018}{HiWi}
+\chronoperiode[color=red]{2018}{2019}{Picnic}
+\chronoperiode{2019}{2021}{AppTec}
+\stopchronology
+
+\startchronology[startyear=2009,startdate=false,stopdate=false]
+\chronoperiode{2009}{2013}{BSc in Math}
+\chronoperiode{2013}{2015}{MSc in Logic}
+\chronoperiode{2016}{2021}{MSc in CS}
+\stopchronology
+
+\spacedhrule{-0.5em}{1em}
+
 \roottitle{Professional Experience}
 
 \headedsection
-  {\href{https://www.apptec360.com/}{AppTec Services GmbH}}
+  {\href{https://www.apptec360.com/}{\colorsquare{yellow} AppTec Services GmbH}}
   {\textsc{Freiburg, Germany}} {%
   \headedsubsection
     {Senior Full-Stack Developer\footnote{All the positions are 100\% = full-time = 40 hrs/week if not otherwise specified.}}
@@ -67,7 +91,7 @@ Baden-W\"urttemberg\sbull
 }
 
 \headedsection
-  {\href{https://picnic.app/}{Picnic International BV}}
+  {\href{https://picnic.app/}{\colorsquare{red} Picnic International BV}}
   {\textsc{Amsterdam, Netherlands}} {%
   \headedsubsection
     {Backend Java Developer}
@@ -76,7 +100,7 @@ Baden-W\"urttemberg\sbull
 }
 
 \headedsection  % sets the header for the section and includes any subsections
-  {\href{http://www.uni-freiburg.de/}{Albert-Ludwigs-Universität Freiburg}}
+  {\href{http://www.uni-freiburg.de/}{\colorsquare{cyan} Albert-Ludwigs-Universität Freiburg}}
   {\textsc{Freiburg im Breisgau, Germany}} {%
   \headedsubsection
     {Research Assistant / HiWi (50\%), \href{http://proglang.informatik.uni-freiburg.de}{Programming Languages Lab}}
@@ -85,16 +109,16 @@ Baden-W\"urttemberg\sbull
 }
 
 \headedsection  % sets the header for a subsection and contains usually body text
-  {\href{https://en.wikipedia.org/wiki/Cafe_Bazaar}{Cafe Bazaar} (Officially:\ Âvây e Hamrâh e Hušmand e Hezârdastân)}
+  {\href{https://en.wikipedia.org/wiki/Cafe_Bazaar}{\colorsquare{brown} Cafe Bazaar} (Officially:\ Âvây e Hamrâh e Hušmand e Hezârdastân)}
   {\textsc{Tehran, Iran}} {%
   \headedsubsection
     {Software Developer}
-    {Ago \apo15 -- Sep \apo16}
+    {Aug \apo15 -- Sep \apo16}
     {\bodytext{Developing features on Divar (10th most used website in Iran) and CafeBazaar (Android app store). Creating CI pipelines. Developing tools for HR. \#Django \#PostgreSQL \#Docker \#GitLab-CI}}
 }
 
 \headedsection
-  {\href{http://mitrc.ir}{Mobin Information Technology Research Center}}
+  {\href{http://mitrc.ir}{\colorsquare{blue} Mobin Information Technology Research Center}}
   {\textsc{Tehran, Iran}} {%
 
   \headedsubsection
@@ -113,7 +137,7 @@ Baden-W\"urttemberg\sbull
 \roottitle{Education}
 
 \headedsection
-  {\href{http://www.uni-freiburg.de/}{Albert-Ludwigs-Universität Freiburg}}
+  {\href{http://www.uni-freiburg.de/}{\colorsquare{cyan} Albert-Ludwigs-Universität Freiburg}}
   {\textsc{Freiburg im Breisgau, Germany}} {%
   \headedsubsection
     {MSc in Computer Science (Informatik)}
@@ -122,7 +146,7 @@ Baden-W\"urttemberg\sbull
 }
 
 \headedsection
-  {\href{http://www.en.sharif.edu/}{Sharif University of Technology}}
+  {\href{http://www.en.sharif.edu/}{\colorsquare{red} Sharif University of Technology}}
   {\textsc{Tehran, Iran}} {%
   \headedsubsection
     {MSc in Pure Mathematics / Logic \textnormal{\textit{~(discontinued)}}}
@@ -133,7 +157,7 @@ Baden-W\"urttemberg\sbull
 }
 
 \headedsection
-  {\href{http://en.sbu.ac.ir/}{Shahid Beheshti University}}
+  {\href{http://en.sbu.ac.ir/}{\colorsquare{blue} Shahid Beheshti University}}
   {\textsc{Tehran, Iran}} {%
   \headedsubsection
     {BSc in Pure Mathematics}
@@ -151,23 +175,23 @@ Baden-W\"urttemberg\sbull
 }
 
 
-\spacedhrule{0.5em}{-0.4em}
+% \spacedhrule{0.5em}{-0.4em}
 
-\roottitle{Skills}
+% \roottitle{Skills}
 
-\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
-  {Programming languages:}
-  {C \emph{(mother tongue)}, C++, Java, Python, Scala, JavaScript, TypeScript.}
+% \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+%   {Programming languages:}
+%   {C \emph{(mother tongue)}, C++, Java, Python, Scala, JavaScript, TypeScript.}
 
-\vspace{0.5em}
-\inlineheadsection
-  {Natural languages:}
-  {Persian \emph{(mother tongue)}, English \emph{(full professional proficiency)}, German \emph{(working proficiency)}, Dutch \emph{(elementary proficiency)}. Lived in \textsc{Germany}, and \textsc{Netherlands},  \textsc{Switzerland}, and  \textsc{Iran}. Can read: Cyrillic, Hebrew, Greek, Phoenician, Old Persian Cuneiform, Avestan, and Pahlavi alphabets.}
+% \vspace{0.5em}
+% \inlineheadsection
+%   {Natural languages:}
+%   {Persian \emph{(mother tongue)}, English \emph{(full professional proficiency)}, German \emph{(working proficiency)}, Dutch \emph{(elementary proficiency)}. Lived in \textsc{Germany}, and \textsc{Netherlands},  \textsc{Switzerland}, and  \textsc{Iran}. Can read: Cyrillic, Hebrew, Greek, Phoenician, Old Persian Cuneiform, Avestan, and Pahlavi alphabets.}
 
-\vspace{0.5em}
-\inlineheadsection
-  {Other skills:}
-  {Create the most boring CV.~~Squash commits. Force push to master. Explain family relations between Mortal Kombat characters. Swear in Huttese. Watch Watchmen Ultimate Cut in one sitting.}
+% \vspace{0.5em}
+% \inlineheadsection
+%   {Other skills:}
+%   {Create the most boring CV.~~Squash commits. Force push to master. Explain family relations between Mortal Kombat characters. Swear in Huttese. Watch Watchmen Ultimate Cut in one sitting.}
 
 \end{document}
 
