@@ -32,6 +32,14 @@
 
 \newcommand{\colorsquare}[1]{\textcolor{#1}{$\blacksquare$}}
 
+% colors
+\definecolor{amethyst}{rgb}{0.6, 0.4, 0.8} % sut
+\definecolor{bazaar}{rgb}{0.6, 0.47, 0.48} % bazaar
+\definecolor{brickred}{rgb}{0.8, 0.25, 0.33} % sbu
+\definecolor{camouflagegreen}{rgb}{0.47, 0.53, 0.42} % mitrc
+\definecolor{carolinablue}{rgb}{0.6, 0.73, 0.89} % uni freiburg
+\definecolor{frenchblue}{rgb}{0.0, 0.45, 0.73} % apptec
+
 \begin{document}  % begin the content of the document
 \sloppy  % this to relax whitespacing in favour of straight margins
 
@@ -46,12 +54,13 @@
 % \sbull is a spaced bullet
 % \href well..
 % \\ breaks the line into a new paragraph
-\noindent\href{mailto:aerabi.at.gmx.dot.de}{mohammad-ali\mbox{}@\mbox{}aerabi.com}\sbull
+\noindent\href{mailto:aerabi.at.gmx.dot.de}{aerabi\mbox{}@\mbox{}gmx.de}\sbull
 \textsmaller{+}49 176 3569 1988\sbull
 % \textsmaller{+}31 6 301 59 402\sbull
-\href{http://aerabi.github.io}{aerabi.github.io}\sbull 
-% \href{http://www.linkedin.com/in/aerabi}{www.linkedin.com/in/aerabi} \sbull
-\href{https://orcid.org/0000-0001-7088-417X}{\textsc{orc}i\textsc{d} 0000-0001-7088-417X} \\
+\href{http://aerabi.com}{aerabi.com}\sbull 
+\href{https://github.com/aerabi}{github.com/aerabi} \sbull
+\href{http://www.linkedin.com/in/aerabi}{linkedin.com/in/aerabi} \sbull
+% \href{https://orcid.org/0000-0001-7088-417X}{\textsc{orc}i\textsc{d} 0000-0001-7088-417X} \\
 % {\newnums angellandros} \emph{(Skype)}\sbull
 Schildackerweg 8 \sbull
 79115\thinspace\ {\sc Freiburg im Breisgau}\sbull
@@ -64,17 +73,17 @@ Baden-W\"urttemberg\sbull
 
 
 \startchronology[startyear=2009,startdate=false,stopdate=false]
-\chronoperiode{2013}{2015}{MITRC}
-\chronoperiode[color=brown]{2015}{2016}{CafeBazaar}
-\chronoperiode{2017}{2018}{HiWi}
+\chronoperiode[color=camouflagegreen]{2013}{2015}{MITRC}
+\chronoperiode[color=bazaar]{2015}{2016}{CafeBazaar}
+\chronoperiode[color=carolinablue]{2017}{2018}{HiWi}
 \chronoperiode[color=red]{2018}{2019}{Picnic}
-\chronoperiode{2019}{2021}{AppTec}
+\chronoperiode[color=frenchblue]{2019}{2021}{AppTec}
 \stopchronology
 
 \startchronology[startyear=2009,startdate=false,stopdate=false]
-\chronoperiode{2009}{2013}{BSc in Math}
-\chronoperiode{2013}{2015}{MSc in Logic}
-\chronoperiode{2016}{2021}{MSc in CS}
+\chronoperiode[color=brickred]{2009}{2013}{BSc in Math}
+\chronoperiode[color=amethyst]{2013}{2015}{MSc in Logic}
+\chronoperiode[color=carolinablue]{2016}{2021}{MSc in CS}
 \stopchronology
 
 \spacedhrule{-0.5em}{1em}
@@ -82,12 +91,12 @@ Baden-W\"urttemberg\sbull
 \roottitle{Professional Experience}
 
 \headedsection
-  {\href{https://www.apptec360.com/}{\colorsquare{yellow} AppTec Services GmbH}}
+  {\href{https://www.apptec360.com/}{\colorsquare{frenchblue} AppTec Services GmbH}}
   {\textsc{Freiburg, Germany}} {%
   \headedsubsection
     {Senior Full-Stack Developer\footnote{All the positions are 100\% = full-time = 40 hrs/week if not otherwise specified.}}
     {Aug \apo19 -- Present}
-    {\bodytext{Creating new backend with Node.js, TypeScript, and MongoDB. Coaching other developers. Setting up CI, Docker setup of the projects, package registries, etc. Doing interviews. \#RxJS \#GitLab}}
+    {\bodytext{Introduce a new backend with Node.js, TypeScript, and MongoDB, and a new frontend with Angular. Introduce GitLab, Docker, RxJS, CI, local NPM registries. Coaching. Doing interviews.}}
 }
 
 \headedsection
@@ -96,35 +105,35 @@ Baden-W\"urttemberg\sbull
   \headedsubsection
     {Backend Java Developer}
     {Jun \apo18 -- Jul \apo19}
-    {\bodytext{Implementing new features for the cross-product platform in Java 11. Fixing bugs and refactoring. Reviewing candidates' assignments. \#MongoDB \#RabbitMQ \#Docker \#RxJava}}
+    {\bodytext{Implement new features for the cross-product platform team in Java 11. Fixing bugs. Refactoring. Reviewing candidates' assignments. \#MongoDB \#RabbitMQ \#Docker \#RxJava}}
 }
 
 \headedsection  % sets the header for the section and includes any subsections
-  {\href{http://www.uni-freiburg.de/}{\colorsquare{cyan} Albert-Ludwigs-Universität Freiburg}}
+  {\href{http://www.uni-freiburg.de/}{\colorsquare{carolinablue} Albert-Ludwigs-Universität Freiburg}}
   {\textsc{Freiburg im Breisgau, Germany}} {%
   \headedsubsection
     {Research Assistant / HiWi (50\%), \href{http://proglang.informatik.uni-freiburg.de}{Programming Languages Lab}}
     {Feb \apo17 -- Jul \apo18}
-    {\bodytext{In charge of implementing a \href{https://mitpress.mit.edu/sites/default/files/titles/content/9780262162289_sch_0001.pdf}{linear lambda calculus} in Coq: \url{https://github.com/aerabi/llc}}}
+    {\bodytext{Implement a \href{https://mitpress.mit.edu/sites/default/files/titles/content/9780262162289_sch_0001.pdf}{linear lambda calculus} in Coq and prove its soundness: \href{https://github.com/aerabi/llc}{\texttt{github.com/aerabi/llc}}}}
 }
 
 \headedsection  % sets the header for a subsection and contains usually body text
-  {\href{https://en.wikipedia.org/wiki/Cafe_Bazaar}{\colorsquare{brown} Cafe Bazaar} (Officially:\ Âvây e Hamrâh e Hušmand e Hezârdastân)}
+  {\href{https://en.wikipedia.org/wiki/Cafe_Bazaar}{\colorsquare{bazaar} Cafe Bazaar} (Officially:\ Âvây e Hamrâh e Hušmand e Hezârdastân)}
   {\textsc{Tehran, Iran}} {%
   \headedsubsection
-    {Software Developer}
+    {Backend Python Developer}
     {Aug \apo15 -- Sep \apo16}
-    {\bodytext{Developing features on Divar (10th most used website in Iran) and CafeBazaar (Android app store). Creating CI pipelines. Developing tools for HR. \#Django \#PostgreSQL \#Docker \#GitLab-CI}}
+    {\bodytext{Develop features on \href{https://en.wikipedia.org/wiki/Divar_(website)}{Divar} (10th most used website in Iran) and CafeBazaar (Android app store). Creating CI pipelines. Developing tools for HR. \#Django \#PostgreSQL \#Docker \#GitLab-CI}}
 }
 
 \headedsection
-  {\href{http://mitrc.ir}{\colorsquare{blue} Mobin Information Technology Research Center}}
+  {\href{http://mitrc.ir}{\colorsquare{camouflagegreen} Mobin Information Technology Research Center}}
   {\textsc{Tehran, Iran}} {%
 
   \headedsubsection
     {Java Developer}
     {Sep \apo13 -- Sep \apo15}
-    {\bodytext{Creating a distributed platform based on Apache Storm and Hadoop in collaboration with the experts.}}
+    {\bodytext{Creat a distributed platform based on Apache Storm and Hadoop for realtime machine learning.}}
 }
 
 \vspace{-0.2em}
@@ -137,61 +146,63 @@ Baden-W\"urttemberg\sbull
 \roottitle{Education}
 
 \headedsection
-  {\href{http://www.uni-freiburg.de/}{\colorsquare{cyan} Albert-Ludwigs-Universität Freiburg}}
+  {\href{http://www.uni-freiburg.de/}{\colorsquare{carolinablue} Albert-Ludwigs-Universität Freiburg}}
   {\textsc{Freiburg im Breisgau, Germany}} {%
   \headedsubsection
     {MSc in Computer Science (Informatik)}
     {2016 -- 2021}
-    {\bodytext{Focused on Cyber-Physical Systems (as the specialization), Machine Learning (master project), and Programming Languages (master thesis).}}
+    {\bodytext{Thesis: A Basis for Event-Driven Programming.}}
 }
 
 \headedsection
-  {\href{http://www.en.sharif.edu/}{\colorsquare{red} Sharif University of Technology}}
+  {\href{http://www.en.sharif.edu/}{\colorsquare{amethyst} Sharif University of Technology}}
   {\textsc{Tehran, Iran}} {%
   \headedsubsection
     {MSc in Pure Mathematics / Logic \textnormal{\textit{~(discontinued)}}}
     {2013 -- 2015} 
-    {\bodytext{Focused on Intuitionistic Logic and Proof Theory.
-    Supervisor: Mohammad Ardeshir.\\
-    Thesis: Categorial Grammar with Applications in Machine Translation.}}
+    {\bodytext{Thesis: Categorial Grammar with Applications in Machine Translation.}}
 }
 
 \headedsection
-  {\href{http://en.sbu.ac.ir/}{\colorsquare{blue} Shahid Beheshti University}}
+  {\href{http://en.sbu.ac.ir/}{\colorsquare{brickred} Shahid Beheshti University}}
   {\textsc{Tehran, Iran}} {%
   \headedsubsection
     {BSc in Pure Mathematics}
     {2009 -- 2013} 
-    {\bodytext{Thesis: Distance Transform with Applications (in the fields of Digital Geometry).\\
-    Two medals (bronze and silver) in National Collegiate Mathematics Competition (2011 and 2013), 5th team rank, and admission to International Mathematics Competition for University Students 2013.}}
+    {
+    % \bodytext{Thesis: Distance Transform with Applications (in the fields of Digital Geometry).\\
+    % Two medals (bronze and silver) in National Collegiate Mathematics Competition (2011 and 2013), 5th team rank, and admission to International Mathematics Competition for University Students 2013.}
+    }
 }
 
-\headedsection
-  {\href{https://en.wikipedia.org/wiki/National_Organization_for_Development_of_Exceptional_Talents}{National Organization for Development of Exceptional Talents}}
-  {\textsc{Karaj, Iran}} {%
-  \headedsubsection
-    {High-School Diploma \& Pre-University Degree in Mathematics and Physics}
-    {2002 -- 2009} {}
-}
+% \headedsection
+%   {\href{https://en.wikipedia.org/wiki/National_Organization_for_Development_of_Exceptional_Talents}{National Organization for Development of Exceptional Talents}}
+%   {\textsc{Karaj, Iran}} {%
+%   \headedsubsection
+%     {High-School Diploma \& Pre-University Degree in Mathematics and Physics}
+%     {2002 -- 2009} {}
+% }
 
 
-% \spacedhrule{0.5em}{-0.4em}
+\spacedhrule{0.5em}{-0.4em}
 
-% \roottitle{Skills}
+\roottitle{Skills}
 
-% \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
-%   {Programming languages:}
-%   {C \emph{(mother tongue)}, C++, Java, Python, Scala, JavaScript, TypeScript.}
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Programming languages:}
+  {C \emph{(mother tongue)}, C++, Java, Python, Scala, JavaScript, TypeScript.}
 
-% \vspace{0.5em}
-% \inlineheadsection
-%   {Natural languages:}
-%   {Persian \emph{(mother tongue)}, English \emph{(full professional proficiency)}, German \emph{(working proficiency)}, Dutch \emph{(elementary proficiency)}. Lived in \textsc{Germany}, and \textsc{Netherlands},  \textsc{Switzerland}, and  \textsc{Iran}. Can read: Cyrillic, Hebrew, Greek, Phoenician, Old Persian Cuneiform, Avestan, and Pahlavi alphabets.}
+\vspace{0.5em}
+\inlineheadsection
+  {Natural languages:}
+  {Persian \emph{(mother tongue)}, English \emph{(C1--C2)}, German \emph{(B1)}, Dutch \emph{(A1--A2)}. 
+%   Lived in \textsc{Germany}, and \textsc{Netherlands},  \textsc{Switzerland}, and  \textsc{Iran}. Can read: Cyrillic, Hebrew, Greek, Phoenician, Old Persian Cuneiform, Avestan, and Pahlavi alphabets.
+  }
 
-% \vspace{0.5em}
-% \inlineheadsection
-%   {Other skills:}
-%   {Create the most boring CV.~~Squash commits. Force push to master. Explain family relations between Mortal Kombat characters. Swear in Huttese. Watch Watchmen Ultimate Cut in one sitting.}
+\vspace{0.5em}
+\inlineheadsection
+  {Other skills:}
+  {Create the most boring CV.~~Squash commits. Force push to master. Explain family relations between Mortal Kombat characters. Swear in Huttese. Watch Watchmen Ultimate Cut in one sitting.}
 
 \end{document}
 
