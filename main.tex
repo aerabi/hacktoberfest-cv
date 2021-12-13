@@ -45,7 +45,7 @@
 
 
 % title on top of the document
-\maintitle{Mohammad-Ali ~A\textquotesingle{}R\^ABI\footnote{Officially (and ambiguously):\ Mohammad Ali ~ARABI.  Lastname:\ A'R\^ABI \textipa{[æPr6:bi]} means nomad.}}{29. 04. 1991 \ \ \ \ Tehran}{Last update on \today}
+\maintitle{Mohammad-Ali ~A\textquotesingle{}R\^ABI\footnote{Officially (and ambiguously):\ Mohammad Ali ~ARABI.  Lastname:\ A'R\^ABI \textipa{[æPr6:bi]} means nomad.}}{29. 04. 1991 \ \ \ \ Tehran}{Last update on \today~(v2.0.0)}
 
 \nobreakvspace{0.3em}  % add some page break averse vertical spacing
 
@@ -69,24 +69,46 @@ Baden-W\"urttemberg\sbull
 
 \spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
 
-\roottitle{Timeline}
+% \roottitle{Timeline}
 
 
-\startchronology[startyear=2009,startdate=false,stopdate=false,stopyear=2022]
-\chronoperiode[color=camouflagegreen]{2013}{2015}{MITRC}
-\chronoperiode[color=bazaar]{2015}{2016}{CafeBazaar}
-\chronoperiode[color=carolinablue]{2017}{2018}{HiWi}
-\chronoperiode[color=red]{2018}{2019}{Picnic}
-\chronoperiode[color=frenchblue]{2019}{2022}{AppTec}
-\stopchronology
+% \startchronology[startyear=2009,startdate=false,stopdate=false,stopyear=2022]
+% \chronoperiode[color=camouflagegreen]{2013}{2015}{MITRC}
+% \chronoperiode[color=bazaar]{2015}{2016}{CafeBazaar}
+% \chronoperiode[color=carolinablue]{2017}{2018}{HiWi}
+% \chronoperiode[color=red]{2018}{2019}{Picnic}
+% \chronoperiode[color=frenchblue]{2019}{2022}{AppTec}
+% \stopchronology
 
-\startchronology[startyear=2009,startdate=false,stopdate=false,stopyear=2022]
-\chronoperiode[color=brickred]{2009}{2013}{BSc in Math}
-\chronoperiode[color=amethyst]{2013}{2015}{MSc in Logic}
-\chronoperiode[color=carolinablue]{2016}{2021}{MSc in CS}
-\stopchronology
+% \startchronology[startyear=2009,startdate=false,stopdate=false,stopyear=2022]
+% \chronoperiode[color=brickred]{2009}{2013}{BSc in Math}
+% \chronoperiode[color=amethyst]{2013}{2015}{MSc in Logic}
+% \chronoperiode[color=carolinablue]{2016}{2021}{MSc in CS}
+% \stopchronology
 
-\spacedhrule{-0.5em}{1em}
+% \spacedhrule{-0.5em}{1em}
+
+\roottitle{Summary}
+
+\begin{itemize}
+    \item At least \textbf{6} years of professional experience:
+      \colorsquare{frenchblue} 2.5y +
+      \colorsquare{red} 1y +
+      \colorsquare{bazaar} 1.5y +
+      \colorsquare{camouflagegreen} (2y $\times$ 50\%) \\
+        of which is:
+        \textbf{Node.js} \colorsquare{frenchblue} 2.5y,
+        \textbf{Java} 2y = \colorsquare{red} 1y + \colorsquare{camouflagegreen} (2y $\times$ 50\%),
+        \textbf{Python} \colorsquare{bazaar} 1.5y.
+    
+    \item Extensive non-9-to-5 experience since \textbf{2004}, \textit{e.g.}:
+    award-winning games written in Unity3D and C++,
+    NPM packages @ \href{https://www.npmjs.com/~aerabi}{\url{npmjs.com/~aerabi}}\footnote{Texts in dark blue are hyperlinks. Those include all of the URLs, the employer names, and school names.}, 3 Android apps on the store, e2e web apps in PHP+MySQL, \textit{etc}.
+    
+    \item Doing Docker since \textbf{2015}, big fan of CI/CD and automation. Now Docker Community Leader @ Zurich.
+\end{itemize}
+
+\spacedhrule{-0.2em}{-0.4em}
 
 \roottitle{Professional Experience}
 
@@ -118,7 +140,7 @@ Baden-W\"urttemberg\sbull
 }
 
 \headedsection  % sets the header for a subsection and contains usually body text
-  {\href{https://en.wikipedia.org/wiki/Cafe_Bazaar}{\colorsquare{bazaar} Cafe Bazaar} (Officially:\ Âvây e Hamrâh e Hušmand e Hezârdastân)}
+  {\href{https://en.wikipedia.org/wiki/Cafe_Bazaar}{\colorsquare{bazaar} Cafe Bazaar} (aka Hezârdastân)}
   {\textsc{Tehran, Iran}} {%
   \headedsubsection
     {Backend Python Developer}
