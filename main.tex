@@ -48,7 +48,9 @@
 
 
 % title on top of the document
-\maintitle{Mohammad-Ali ~A\textquotesingle{}R\^ABI\footnote{Officially (and ambiguously):\ Mohammad Ali ~ARABI.  Lastname:\ A'R\^ABI \textipa{[æPr6:bi]} means nomad.}}{29. 04. 1991 \ \ \ \ Tehran}{Last update on \today~(v2.2.0)}
+\maintitle{Mohammad-Ali ~A\textquotesingle{}R\^ABI%
+% \footnote{Officially (and ambiguously):\ Mohammad Ali ~ARABI.  Lastname:\ A'R\^ABI \textipa{[æPr6:bi]} means nomad.}
+}{29. 04. 1991 \ \ \ \ Tehran}{Last update on \today~(v2.2.0)}
 
 \nobreakvspace{0.3em}  % add some page break averse vertical spacing
 
@@ -72,16 +74,17 @@ Baden-W\"urttemberg\sbull
 
 \spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
 
-% \roottitle{Timeline}
+\roottitle{Timeline}
 
 
-% \startchronology[startyear=2009,startdate=false,stopdate=false,stopyear=2022]
-% \chronoperiode[color=camouflagegreen]{2013}{2015}{MITRC}
-% \chronoperiode[color=bazaar]{2015}{2016}{CafeBazaar}
-% \chronoperiode[color=carolinablue]{2017}{2018}{HiWi}
-% \chronoperiode[color=red]{2018}{2019}{Picnic}
-% \chronoperiode[color=frenchblue]{2019}{2022}{AppTec}
-% \stopchronology
+\startchronology[startyear=2013,startdate=false,stopdate=false,stopyear=2023]
+\chronoperiode[color=camouflagegreen]{2013}{2015}{MITRC}
+\chronoperiode[color=bazaar]{2015}{2016}{CafeBazaar}
+\chronoperiode[color=carolinablue]{2016}{2018}{MSc}
+\chronoperiode[color=red]{2018}{2019}{Picnic}
+\chronoperiode[color=frenchblue]{2019}{2022}{AppTec}
+\chronoperiode[color=orange]{2022}{2023}{Jodel}
+\stopchronology
 
 % \startchronology[startyear=2009,startdate=false,stopdate=false,stopyear=2022]
 % \chronoperiode[color=brickred]{2009}{2013}{BSc in Math}
@@ -89,7 +92,7 @@ Baden-W\"urttemberg\sbull
 % \chronoperiode[color=carolinablue]{2016}{2021}{MSc in CS}
 % \stopchronology
 
-% \spacedhrule{-0.5em}{1em}
+\spacedhrule{-0.5em}{1em}
 
 \roottitle{Summary}
 
@@ -100,7 +103,7 @@ Baden-W\"urttemberg\sbull
       \colorsquare{red} 1y +
       \colorsquare{bazaar} 1.5y +
       \colorsquare{camouflagegreen} 2y \\
-        using various languages: TypeScript, Python, Java, Go, JavaScript, PHP, Scala, Coq, R, C, Rust, etc.
+        using various languages: Python (\colorsquare{orange}\colorsquare{frenchblue}\colorsquare{carolinablue}\colorsquare{bazaar}), TypeScript (\colorsquare{orange}\colorsquare{frenchblue}), Java (\colorsquare{red}\colorsquare{camouflagegreen}), Go, JavaScript, Coq, etc.
     
     \item Docker Community Leader, Snyk Ambassador, conference speaker, and content creator.
     
@@ -115,21 +118,21 @@ Baden-W\"urttemberg\sbull
   {\href{https://www.apptec360.com/}{\colorsquare{orange} Jodel}}
   {\textsc{Berlin, Germany}} {%
   \headedsubsection
-    {Software Engineer}
+    {Software Engineer $\otimes$ SRE}
     {Jul \apo22 -- Now}
     {\bodytext{%
     \begin{tabular}{p{0.45\textwidth}l}
         \tbullet Migrate Kubernetes services to AWS & \tbullet Creat Helm charts \& GitHub Actions pipelines \\
         \tbullet Take on-call duty once a month & \tbullet Develop features for the backend
     \end{tabular} \\
-    \#Kubernetes \#Terraform \#AWS \#MongoDB \#Postgres \#Redis \#Elastic \#Helm \#TypeScript \#Python}}
+    \textbf{\#Kubernetes \#Terraform \#AWS \#MongoDB \#Postgres \#Redis \#Elastic \#Helm \#TypeScript \#Python}}}
 }
 
 \headedsection
   {\href{https://www.apptec360.com/}{\colorsquare{frenchblue} AppTec Services GmbH}}
   {\textsc{Freiburg, Germany}} {%
   \headedsubsection
-    {Senior Software Engineer $\mapsto$ Engineering Manager}
+    {Software Engineer $\mapsto$ Engineering Manager}
     {Mar \apo18 -- Jun \apo18 and Aug \apo19 -- Jul \apo22}
     {\bodytext{%
     \begin{tabular}{p{0.45\textwidth}l}
@@ -138,7 +141,7 @@ Baden-W\"urttemberg\sbull
         \tbullet Create +720 test cases to cover 94.14\% of code &
         \tbullet Manage a small team of 3, lead a bigger one
     \end{tabular} \\
-    \#MongoDB \#Express.js \#Angular \#Node.js \#TypeScript \#Python \#Mongoose \#Docker \#MariaDB}}
+    \textbf{\#MongoDB \#Express.js \#Angular \#Node.js \#TypeScript \#Python \#Mongoose \#Docker \#MariaDB}}}
 }
 
 \headedsection
@@ -153,7 +156,7 @@ Baden-W\"urttemberg\sbull
         \tbullet Review all the candidates' assignments 
     \end{tabular} \\
     \tbullet Reduced hiring process time by weeks by implementing an automated appointment notifier \\
-    \#MongoDB \#RabbitMQ \#PostgreSQL \#jOOQ \#Docker \#Java \#SpringBoot \#RxJava \#Swagger \#Jira}}
+    \textbf{\#MongoDB \#RabbitMQ \#PostgreSQL \#jOOQ \#Docker \#Java \#SpringBoot \#RxJava \#Swagger \#Jira}}}
 }
 
 \headedsection  % sets the header for a subsection and contains usually body text
@@ -170,7 +173,7 @@ Baden-W\"urttemberg\sbull
         \tbullet Create technical educational onboarding videos
     \end{tabular} \\
     \tbullet Save HR team weeks of manual labor by automating the 360$^{\circ}$ feedback and contract generation \\
-    \#Django \#PostgreSQL \#ElasticSearch \#Sentry \#Docker \#GitLab-CI \#Python \#Scala \#Trello \#Scrum \\
+    \textbf{\#Django \#PostgreSQL \#ElasticSearch \#Sentry \#Docker \#GitLab-CI \#Python \#Scala \#Trello \#Scrum} \\
     }}
 }
 
@@ -182,7 +185,7 @@ Baden-W\"urttemberg\sbull
   \headedsubsection
     {Java Developer (60\%)}
     {Sep \apo13 -- Sep \apo15}
-    {\bodytext{Creat a distributed platform based on Apache Storm and Hadoop for real-time machine learning. Integrate the work of data scientists into the platform. \#ZooKeeper \#PostgreSQL \#Lucene \#Java}}
+    {\bodytext{Creat a distributed platform based on Apache Storm and Hadoop for real-time machine learning. Integrate the work of data scientists into the platform. \textbf{\#ZooKeeper \#PostgreSQL \#Lucene \#Java}}}
 }
 
 \vspace{-0.2em}
@@ -200,7 +203,9 @@ Baden-W\"urttemberg\sbull
   \headedsubsection
     {MSc in Computer Science (Informatik)}
     {2016 -- 2021}
-    {\bodytext{Thesis: A Basis for Event-Driven Programming.}}
+    {%
+    % \bodytext{Thesis: A Basis for Event-Driven Programming.}
+    }
 }
 
 \headedsection
@@ -209,7 +214,9 @@ Baden-W\"urttemberg\sbull
   \headedsubsection
     {MSc in Pure Mathematics / Logic \textnormal{\textit{~(discontinued)}}}
     {2013 -- 2015} 
-    {\bodytext{Thesis: Categorial Grammar with Applications in Machine Translation.}}
+    {%
+    % \bodytext{Thesis: Categorial Grammar with Applications in Machine Translation.}
+    }
 }
 
 \headedsection
