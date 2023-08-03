@@ -10,6 +10,16 @@ badge. To access the older versions, navigate to the [Releases](https://github.c
 
 This is the CV I created the first draft of, on Oktoberfest 2017.
 
+I'd highly recommend having a look at my [YouTube video](https://www.youtu.be/DMwbXN3QKbs) on building your CV with Docker and GitHub Actions before you try to implement this on your own.
+
+<!-- [![Build your CV with Docker and GitHub Actions](https://i.ytimg.com/vi/DMwbXN3QKbs/hq720.jpg)](https://www.youtu.be/DMwbXN3QKbs) -->
+
+<a href="https://www.youtu.be/DMwbXN3QKbs">
+  <img width="40%" alt="Build your CV with Docker and GitHub Actions" src="https://i.ytimg.com/vi/DMwbXN3QKbs/hq720.jpg" />
+</a>
+
+If you have any issues, you can [create an issue](https://github.com/aerabi/hacktoberfest-cv/issues/new/choose) and add the details there.
+
 # Table of Contents
 
 - [LaTeX Compiling](#latex-compiling)
@@ -33,16 +43,16 @@ There is also a [bash script](https://github.com/cr2007/CV/blob/main/create_tag.
 
 You can check it by going to your repository settings.
 
-Settings > Code and automation > Actions > General
+**Settings** > **Code and automation** > **Actions** > **General**
 
 And then scroll down to **Workflow permissions**.
 
 And select the **Read and write permissions** option
 
-![Screenshot of the Workflow permissions setting in a GitHub Repository](images/permission_change.png)
+<img width="60%" alt="Screenshot of the Workflow permissions setting in a GitHub Repository" src="images/permission_change.png" />
 
 
-2. Type the following in the terminal to add a tag to your latest commit
+2. Type the following in the terminal to add a **tag** to your latest commit
 
 ```bash
 git tag <tag-name>
@@ -50,11 +60,11 @@ git tag <tag-name>
 
 Replacing `<tag-name>` with your version number (i.e. `v0.1.0`, etc.)
 
-💡 If you want to tag a particular commit (maybe one with the latest $\LaTeX$ change), you can enter `git tag <tag-name> <commit-hash>`
+💡 If you want to tag a **particular commit** (maybe one with the latest $\LaTeX$ change), you can enter `git tag <tag-name> <commit-hash>`
 
 Which will tag only that particular commit instead.
 
-3. Push your tag to the main branch
+3. **Push** your tag to the main branch
 
 ```bash
 git push origin <tag-name>
