@@ -14,7 +14,7 @@ I'd highly recommend having a look at my [YouTube video](https://youtu.be/DMwbXN
 
 <!-- [![Build your CV with Docker and GitHub Actions](https://i.ytimg.com/vi/DMwbXN3QKbs/hq720.jpg)](https://www.youtu.be/DMwbXN3QKbs) -->
 
-<a href="https://www.youtu.be/DMwbXN3QKbs">
+<a href="https://youtu.be/DMwbXN3QKbs">
   <img width="40%" alt="Build your CV with Docker and GitHub Actions" src="https://i.ytimg.com/vi/DMwbXN3QKbs/hq720.jpg" />
 </a>
 
