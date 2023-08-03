@@ -10,7 +10,7 @@ badge. To access the older versions, navigate to the [Releases](https://github.c
 
 This is the CV I created the first draft of, on Oktoberfest 2017.
 
-I'd highly recommend having a look at my [YouTube video](https://www.youtu.be/DMwbXN3QKbs) on building your CV with Docker and GitHub Actions before you try to implement this on your own.
+I'd highly recommend having a look at my [YouTube video](https://youtu.be/DMwbXN3QKbs) on building your CV with Docker and GitHub Actions before you try to implement this on your own.
 
 <!-- [![Build your CV with Docker and GitHub Actions](https://i.ytimg.com/vi/DMwbXN3QKbs/hq720.jpg)](https://www.youtu.be/DMwbXN3QKbs) -->
 
